@@ -1,0 +1,35 @@
+import datetime
+print("My AI Chatbot NeuraBot")
+print("Type 'bye' to exit")
+
+while True:
+    user = input("You: ").lower()
+    if user in ["hi","hello","hey"]:
+        print("Bot: Hello! How can I help you?")
+
+    elif "how are you" in user:
+        print("Bot: I am doing great!")
+
+    elif "your name" in user:
+        print("Bot: I am  NeuraBot.")
+
+    elif "what is ai" in user:
+        print("Bot: AI stands for Artificial Intelligence.")
+
+    elif "what is python" in user:
+        print("Bot: Python is a popular programming language.The other python is a kind of snake")
+
+    elif "time" in user:
+        now = datetime.datetime.now()
+        print("Bot: Current time is", now.strftime("%H:%M:%S"))
+
+    elif "date" in user:
+        today = datetime.date.today()
+        print("Bot: Today's date is", today)
+
+    elif user == "bye":
+        print("Bot: Goodbye! Have a nice day.")
+        break
+
+    else:
+        print("Bot: Sorry, I don't understand that.")
